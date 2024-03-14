@@ -1,0 +1,37 @@
+.content {
+    height: 30vh;
+    width: 100%;
+  }
+
+  
+  
+  .carousel {
+    height: 30vh;
+    overflow: hidden;
+    width: 100%;
+    
+    
+  }
+
+  
+  .carousel img {
+    height: 100%; /* Ensure the image fills the height of the carousel */
+    width: 100%; /* Ensure the image fills the width of the carousel */
+    object-fit: contain; /* Ensure the image fits within the container without distortion */
+    
+  }
+  
+  .events {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .events img {
+    width: 300px; /* Adjust image size as needed */
+    margin: 10px;
+  }
+
+  

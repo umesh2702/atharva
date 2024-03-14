@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbfbfb;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo p{
+    font-size: 50px;
+    font-weight: 600;
+    color: #383838;
+    
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    color: #252525;
+
+}
+.links li{
+    cursor: pointer;
+}
+.social{
+    display: flex;
+    gap: 30px;
+    background: #fbfbfb;
+}
+.copy{
+   display: flex;
+    flex-direction: column;    
+    width: 100%;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+}
