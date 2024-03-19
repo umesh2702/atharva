@@ -1,9 +1,21 @@
-import React from 'react'
+// LoginForm.js
+import React, { useState } from 'react';
+import '../CSS/Login.css';
+import { Link } from 'react-router-dom';
 
-function Login() {
+const Login = () => {
+  const [login, setLogin]= useState(false);
+  const handleLoginClick = () => {
+    setLogin(true);
+  };
   return (
-    <div>Login</div>
-  )
-}
+    <div className="home" onClick={handleLoginClick} >
+      <h1  > Login</h1>
+      
+    </div>
+    
+  );
+  
+};
 
-export default Login
+export default Login;

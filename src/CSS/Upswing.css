@@ -1,0 +1,110 @@
+/* UpSwingPage.css */
+
+.upswing {
+    padding: 0;
+    display: flex;
+     /* Center-align content vertically */
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    background: linear-gradient(135deg, #0077b3, #3f51b5); /* Linear gradient background */
+    color: #fff; /* Text color */
+  }
+  
+  .upswing-page {
+    padding: 20px;
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center;
+    text-align: center; /* Center-align the content */
+  }
+  
+  .upswing-header {
+    margin-bottom: 30px;
+  }
+  
+  .upswing-header h1 {
+    font-size: 36px;
+  }
+  
+  .upswing-header p {
+    font-size: 18px;
+  }
+  
+  .upswing-intro,
+  .upswing-domains,
+  .upswing-resources,
+  .upswing-sessions,
+  .upswing-social {
+    margin-bottom: 50px;
+    text-align: left; /* Reset text alignment for sections */
+  }
+  
+  .upswing-intro h2,
+  .upswing-domains h2,
+  .upswing-resources h2,
+  .upswing-sessions h2,
+  .upswing-social h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .upswing-intro p,
+  .upswing-domains p,
+  .upswing-resources p,
+  .upswing-sessions p,
+  .upswing-social p {
+    font-size: 16px;
+  }
+  
+  .upswing-domains ul,
+  .upswing-sessions ul,
+  .upswing-social ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .upswing-domains li,
+  .upswing-sessions li,
+  .upswing-social li {
+    margin-bottom: 10px;
+  }
+  
+  .upswing-domains li a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .upswing-domains li a:hover {
+    text-decoration: underline;
+  }
+  
+  .upswing-sessions .session-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .upswing-sessions .session-images img {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .upswing-social ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .upswing-social ul li {
+    margin: 0 10px;
+  }
+  
+  .upswing-social ul li a {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .upswing-social ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add more styles as needed */
+  

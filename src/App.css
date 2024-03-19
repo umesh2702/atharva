@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blank{
+  color: blue;
+}
+.two{
+  display: flex;
+}
+#dropdown-basic{
+  background-color: rgb(253, 145, 3);
+  border-radius: 18px;
+  border-color: rgb(253, 145, 3);
+  margin-left: 5px;
+}
+
+body{
+  color: #282c34;
+}
+
+#m_heading{
+  padding: 10px;
+  font-size: 5rem;
+  text-align: center;
+  align-items: center;
+  font-family: 'Sacramento', cursive;
+  /* color: rgb(8, 36, 61); */
+  background-image: linear-gradient(to right, #F25A3C, #c46218, #f95220);
+  -webkit-background-clip: text; /* Apply the gradient as a clip to the text */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  font-weight: bold;
+}
+
+
+.second{
+  justify-content: center;
+  align-items: center;
+  padding-top: 12%;
+}
+
+.second h1{
+  font-size: 4rem;
+  color: #282c34;
+}
+.second p{
+  font-size: 1.5rem;
+  color: #282c34;
+}
+
+#third{
+  padding-top: 5%;
+}
+
+
+#carousel_p{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+#carousel_p h3{
+  color: black;
+}
+
+#carousel_p p{
+  color: black;
+}
+
+#upComingEvent{
+  padding-top: 2%;
+}
+
+.cards{
+  padding: 2%;
+}
