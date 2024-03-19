@@ -1,120 +1,138 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import image from '../images/1.png';
+import React from 'react';
+import atharvalogo from '../images/atharva logo.png'
+import '../CSS/PageBackground.css'; // Import the CSS file
 
-function About() {
-  // Configuration for the slider
-  const settings = {
-    dots: false,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000, // Set the time interval for slides in milliseconds
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+import { Carousel } from 'react-bootstrap'; // Import Carousel for animations
 
+const AboutUs = () => {
   return (
-    <>
-      <div className="main" style={{ padding: "20px", textAlign: "center" }}>
-        <div className="multi-row-wrapper">
-          <div className="row" style={{ marginBottom: "20px",  padding: "20px", }}>
-            <div className="info" style={{ flex: "1", textAlign: "left", background: "#f0f0f0", padding: "20px", borderRadius: "10px" }}>
-              <div className="title" style={{ fontSize: "24px", marginBottom: "10px" }}>About Us</div>
-              <div className="discr">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                nisi reprehenderit, recusandae quisquam beatae necessitatibus
-                inventore vel illo impedit tempore aspernatur exercitationem
-                ducimus nobis distinctio dolore quis enim quasi alias.
-              </div>
-            </div>
-            <img
-              src={image}
-              alt="img"
-              style={{ flex: "1", maxWidth: "100%", maxHeight: "100%", borderRadius: "10px" }}
-            />
-          </div>
-          <div className="row" style={{ marginBottom: "20px" }}>
-            <img
-              src={image}
-              alt="img"
-              style={{ flex: "1", maxWidth: "100%", maxHeight: "100%" }}
-            />
-            <div className="info" style={{ flex: "1", textAlign: "left", background: "#f9f9f9", padding: "20px", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-              <div className="title" style={{ fontSize: "24px", marginBottom: "10px" }}>Our Mission And vision</div>
-              <div className="discr">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                nisi reprehenderit, recusandae quisquam beatae necessitatibus
-                inventore vel illo impedit tempore aspernatur exercitationem
-                ducimus nobis distinctio dolore quis enim quasi alias.
-              </div>
-            </div>
-          </div>
-          <div className="row" style={{ marginBottom: "20px" }}>
-            <div className="info" style={{ flex: "1", textAlign: "left",background: "#f9f9f9", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", padding: "20px", borderRadius: "10px" }}>
-              <div className="title" style={{ fontSize: "24px", marginBottom: "10px" }}>Our Story</div>
-              <div className="discr">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                nisi reprehenderit, recusandae quisquam beatae necessitatibus
-                inventore vel illo impedit tempore aspernatur exercitationem
-                ducimus nobis distinctio dolore quis enim quasi alias.
-              </div>
-            </div>
-            <img
-              src={image}
-              alt="img"
-              style={{ flex: "1", maxWidth: "100%", maxHeight: "100%", borderRadius: "10px" }}
-            />
-          </div>
+    <div className="container-fluid about-us-page  text-light p-0 mt-0 page-background">
+      <h1 className="display-1 mb-4 text-center animate__animated animate__fadeInDown">
+        About Us
+      </h1>
+      <p className="lead text-center animate__animated animate__fadeInDown">
+        We are a passionate team dedicated to creating innovative solutions. Our mission
+        is to empower users with cutting-edge technology and exceptional experiences.
+      </p>
+
+      <div className="row align-items-center mb-5">
+        <div className="col-md-6 mb-3 mb-md-0">
+          <img
+            className="img-fluid about-us-image animate__animated animate__fadeInLeft"
+            src={atharvalogo}// Replace with your image
+            alt="Community Image"
+          />
         </div>
-        {/* Additional styling for cards */}
-        <div
-          className="cards-wrapper"
-          style={{
-            textAlign: "center",
-            marginTop: "50px",
-            marginBottom: "50px",
-            background: "#f9f9f9",
-            padding: "20px",
-            borderRadius: "10px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)"
-          }}
-        >
-          <div className="cards-wrapper-title" style={{ fontSize: "24px", marginBottom: "20px" }}>ADSC By Numbers</div>
-          <div className="row" style={{ display: "flex", justifyContent: "space-around" }}>
-            <div className="card" style={{ flex: "1", background: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", marginBottom: "20px" }}>
-              {/* Your first part content */}
-            </div>
-            <div className="card" style={{ flex: "1", background: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", marginBottom: "20px", marginLeft: "20px", marginRight: "20px" }}>
-              {/* Your second part content */}
-            </div>
-            <div className="card" style={{ flex: "1", background: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", marginBottom: "20px" }}>
-              {/* Your third part content */}
+        <div className="col-md-6 about-us-text">
+          <h2 className="display-4 mb-4 animate__animated animate__fadeInRight">
+            Our Vision & Mission
+          </h2>
+          <p className="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+            bibendum laoreet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+            dolor auctor. Donec sed odio dui. Pellentesque at ultrices risus. Vivamus
+            magna metus, pulvinar at elementum eu, placerat at tellus.
+          </p>
+        </div>
+      </div>
+
+      <div className="row g-3 mb-5 overflow-auto justify-content-center">        
+      <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInUp"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            <img
+              src={atharvalogo}
+              alt="Card Image 1"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Card Title 1</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up the
+                body of the card content.
+              </p>
             </div>
           </div>
         </div>
-        {/* Additional styling for review block */}
-        <div
-          className="review-block"
-          style={{ textAlign: "center", marginBottom: "50px", background: "#f0f0f0", padding: "20px", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}
-        >
-          <div className="review-block-title" style={{ fontSize: "24px", marginBottom: "20px" }}>What Our Community Members Say</div>
-          <div className="review-carousel">
-            <Slider {...settings}>
-              <div className="review">hi</div>
-              <div className="review">hello</div>
-              <div className="review">nama</div>
-              <div className="review">js</div>
-              {/* Your review content */}
-            </Slider>
+        <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInRight"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            <img
+              src={atharvalogo}
+              alt="Card Image 2"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Card Title 2</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up the
+                body of the card content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInDown"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            <img
+              src={atharvalogo}
+              alt="Card Image 3"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Card Title 3</h5>
+              <p className="card-text">
+                Some quick example text to build on the card title and make up the
+                body of the card content.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Add three more cards in similar fashion */}
+        <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInUp"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            {/* Add content for the new card */}
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInRight"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            {/* Add content for the new card */}
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div
+            className="card bg-secondary text-light animate__animated animate__fadeInDown"
+            style={{ maxWidth: '300px' }} // Set max-width for cards
+          >
+            {/* Add content for the new card */}
           </div>
         </div>
       </div>
-    </>
-  );
-}
+       
+      
 
-export default About;
+      <div className="carousel-container">
+        <h2 className="display-4 mb-4 text-center animate__animated animate__fadeInUp">
+          Our Work
+        </h2>
+        <Carousel fade controls="false" indicators="false" style={{ height: '300px' }}>
+          {/* ... Carousel.Item elements for slides ... */}
+        </Carousel>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;
