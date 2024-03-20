@@ -6,7 +6,7 @@ import { Carousel } from 'react-bootstrap'; // Import Carousel for animations
 
 const AboutUs = () => {
   return (
-    <div className="container-fluid about-us-page  text-light p-0 mt-0 page-background">
+    <div className="container-fluid about-us-page  text-dark p-0 mt-0 page-background" >
       <h1 className="display-1 mb-4 text-center animate__animated animate__fadeInDown">
         About Us
       </h1>

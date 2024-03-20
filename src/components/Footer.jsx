@@ -44,7 +44,7 @@ const ThreeEqualBoxes = () => {
 
         {/* Box 2 */}
         <Col md={4} className="">
-          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center">
+          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center" style={{paddingTop:'0'}}>
             <div className="d-flex align-items-center">
               <BiLogoGmail style={{ fontSize: "1.75rem", color: "rgb(134, 114, 243)" }} />
               <p className="text-lg mt-3" style={{color:'white'}}>info@Atharva.com</p>
@@ -58,7 +58,7 @@ const ThreeEqualBoxes = () => {
 
         {/* Box 3 */}
         <Col md={4} className="">
-          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center">
+          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center" style={{padding:'0'}}>
             <h2 className="text-2xl font-semibold"  style={{color:'white'}}>Follow Us</h2>
             <div className="d-flex mt-2">
               <a href="https://www.linkedin.com/company/atharva-data-science-community/" className="mr-2" target="_blank">
