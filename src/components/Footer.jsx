@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaLinkedin, FaInstagram, FaPhoneAlt,FaDiscord } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import adsc from '../images/atharva2.png';
+import { Link } from "react-router-dom";
 
 
 const ThreeEqualBoxes = () => {
@@ -31,14 +32,13 @@ const ThreeEqualBoxes = () => {
             >
              
             </h2>
-            <ul style={{ color: 'white', textDecoration: 'none' , padding: '0', margin: '0' }}>
-              <br />
-              <br />
+            <ul style={{ color: 'white', textDecoration: 'none', padding: '0', margin: '0' , fontSize:'45', marginTop:'12%'}}>
 
-            <li ><a href="#" >Home</a></li>
-            <li ><a href="#evnets">Events</a></li>
-            <li ><a href="#about">About</a></li>
-            </ul>
+  <Link style={{ color: 'white', textDecoration: 'none',  fontSize:'18px' }} to='/'><li>Home</li></Link >        
+  <Link style={{ color: 'white', textDecoration: 'none',fontSize:'18px' }} to='/events'><li>Events</li></Link>            
+  <Link style={{ color: 'white', textDecoration: 'none',fontSize:'18px' }} to='/about'><li>About</li></Link>              
+</ul>
+
           </div>
         </Col>
 
@@ -58,9 +58,9 @@ const ThreeEqualBoxes = () => {
 
         {/* Box 3 */}
         <Col md={4} className="">
-          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center" style={{padding:'0'}}>
+          <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center" style={{padding:'0',}}>
             <h2 className="text-2xl font-semibold"  style={{color:'white'}}>Follow Us</h2>
-            <div className="d-flex mt-2">
+            <div className="d-flex mt-2" style={{ gap:'10px'}}>
               <a href="https://www.linkedin.com/company/atharva-data-science-community/" className="mr-2" target="_blank">
                 <FaLinkedin style={{ fontSize: "2.25rem", color: "rgb(134, 114, 243)" }} />
               </a>
@@ -78,7 +78,7 @@ const ThreeEqualBoxes = () => {
       {/* Copyright */}
       <Row className="text-center">
         <Col>
-          <p className="text-gray-600 text-lg">
+          <p className="text-600 text-lg" style={{color:'white'}}>
             &copy; {new Date().getFullYear()} Atharva. All rights reserved.
           </p>
         </Col>

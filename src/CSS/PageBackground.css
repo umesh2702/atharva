@@ -1,0 +1,7 @@
+.card:hover {
+    max-width: 600px; /* Double the original max-width */
+  }
+  
+  .card:hover .card-img-top {
+    width: 100%; /* Expand the image to fill the expanded card */
+  }

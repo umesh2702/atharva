@@ -9,38 +9,33 @@ const Content = () => {
   };
 
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nisi
-        nec ex ultricies laoreet. Nullam id lectus euismod, ultrices leo non,
-        hendrerit arcu. Integer sed libero quis ligula eleifend fermentum. In
-        vitae magna nec nisi feugiat dictum. Morbi in tempus est. Phasellus at
-        urna tellus. In ac lacus id nisl placerat pharetra. Fusce eget
-        convallis elit. Duis vitae turpis velit. Vestibulum ante ipsum primis
-        in faucibus orci luctus et ultrices posuere cubilia Curae;
-      </p>
-      {!expanded && (
-        <Button variant="primary" onClick={toggleExpand}>
-          Read more
-        </Button>
-      )}
-      {expanded && (
-        <div>
-          <p>
-            Mauris eget tellus nec dolor interdum malesuada. Vestibulum eu
-            sapien odio. Mauris suscipit ipsum sit amet dui vestibulum, sed
-            ultricies lacus dignissim. Donec tincidunt lectus justo, vitae
-            luctus quam commodo vel. Morbi eu leo sed urna posuere vehicula ac
-            sit amet arcu. Curabitur nec ligula elit. Sed vitae nulla eget
-            elit placerat condimentum vel eget justo. Nulla facilisi. Nullam
-            molestie dictum est, sit amet pharetra velit posuere sed. Cras
-            dictum venenatis arcu, sit amet facilisis metus tristique sed.
+    <div style={{ display: 'flex',  width: 'auto' , marginTop:'10vh', paddingLeft:'10px', paddingRight:'10px'}}>
+      <div >
+        <div style={{  }}>
+          <p style={{ fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
+          The Atharva Data Science Community (ADSC) was established by Data Science students on June 15, 2022, at Malla Reddy Engineering College with the aim of bridging the gap between the college curriculum and industry requirements in the field of data science. Named after the Atharvana Veda, symbolizing comprehensive knowledge, ADSC endeavors to serve as a platform for discussion, learning, and teaching in data science.
+
+Under the guidance of Dr. S. ShivaPrasad, the Head of Department, and the support of Dr. A. Ramaswamy Reddy, the Director, ADSC has emerged as a dynamic and committed community dedicated to fostering practical skills and knowledge in data science among students.
           </p>
-          <Button variant="secondary" onClick={toggleExpand}>
-            Read less
-          </Button>
+          {!expanded && (
+            <Button variant="primary" onClick={toggleExpand} style={{ marginTop: '20px', background:'#F25A3C ', border:'none  ' }}>
+              Read more
+            </Button>
+          )}
+          {expanded && (
+            <div>
+              <p style={{ fontSize: '1.2rem', color: '#333', lineHeight: '1.6' }}>
+              Through a variety of initiatives such as workshops, hackathons, and the annual tech fest, Praesto, ADSC provides students with opportunities to showcase their talents, innovation, and empowerment. Notably, the community's core team and interns have demonstrated success not only in technical endeavors but also in cultural and sports events, underscoring their diverse skills and achievements.
+
+By creating a collaborative and supportive environment, ADSC contributes to nurturing a culture of learning and growth among students interested in data science, thereby preparing them for the demands of the industry and beyond.
+              </p>
+              <Button variant="secondary" onClick={toggleExpand} style={{ marginTop: '20px',background:'#FF7F40 ', border:'none  '  }}>
+                Read less
+              </Button>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 };

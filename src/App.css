@@ -110,3 +110,8 @@ body{
 .cards{
   padding: 2%;
 }
+
+.list-group a:hover{
+    cursor: pointer;
+}
+

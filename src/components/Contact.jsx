@@ -6,7 +6,7 @@ const ContactUs = () => {
       <div className="row">
         <div className="col-md-6">
           <div style={{ marginBottom: '1rem', textAlign:'center' }}>
-            <h4 >Head over to MREC</h4 >
+            <h4 style={{color:'#F25A3C'}}>Head over to MREC</h4 >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2258.0446194531996!2d78.45257929033018!3d17.558261457683965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8f9f1fb120d1%3A0x2d4f935c2378dbe6!2sMalla%20Reddy%20Engineering%20College!5e0!3m2!1sen!2sin!4v1710494847824!5m2!1sen!2sin"
               width="80%"
@@ -19,7 +19,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="col-md-6" style={{color:'black'}}>
-          <h1 className="display-1 mb-4 text-center animate__animated animate__fadeInDown">
+          <h1 className="display-1 mb-4 text-center animate__animated animate__fadeInDown" style={{color:'#F25A3C', fontWeight:'400'}}>
             Contact Us
           </h1>
 
@@ -66,7 +66,7 @@ const ContactUs = () => {
                     rows="5"
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary animate__animated animate__pulse animate__infinite">
+                <button type="submit" className="btn btn-primary animate__animated animate__pulse animate__infinite" style={{background:'#FF7F40 ', border:'none  ' }}>
                   Send Message
                 </button>
               </form>

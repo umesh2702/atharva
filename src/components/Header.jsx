@@ -25,17 +25,17 @@ export default class NavbarComp extends Component {
               </Navbar.Brand>
               </Link>
               <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end' }}>
-                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={{ borderColor: 'white' }} />
+                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={{ backgroundColor: '#EF8535' }} />
                 <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}
                   aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                   placement="end"
                 >
-                  <Offcanvas.Header closeButton>
-                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>Menu</Offcanvas.Title>
+                  <Offcanvas.Header closeButton className='bg-dark' style={{color: 'white'}}>
+                    <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{ color: 'white' }}>Menu</Offcanvas.Title>
                   </Offcanvas.Header>
-                  <Offcanvas.Body>
-                    <Nav className="justify-content-end flex-grow-1 pe-3" placement="end" >
+                  <Offcanvas.Body className='bg-dark'>
+                    <Nav className="justify-content-end flex-grow-1 pe-3 bg-dark" placement="end" >
                       <Link to="/about" style={{ textDecoration: 'none' }}>
                         <Nav.Link href="#about" style={{ color: 'white' }}>About</Nav.Link>
                       </Link>
@@ -48,7 +48,7 @@ export default class NavbarComp extends Component {
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end">  
                   <Form className="d-flex">
                     <Link to='/login'>
                     <Button style={{ background: '#EF8535', border: 'none' }}>Login</Button>

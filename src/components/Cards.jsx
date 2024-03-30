@@ -1,0 +1,181 @@
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap';
+import inaug from '../images/inaug.JPG'; // Import your placeholder image here
+import k22 from '../images/2k22.png'
+import guest from '../images/guest1.JPG'
+import sql from '../images/sql4.JPG'
+import EDA from '../images/EDA.jpg'
+import Hack from '../images/Hackathon.jpg';
+import event2 from '../images/carousel/carousel1.jpg';
+import { useEffect } from 'react';
+import AOS from 'aos';
+
+function Cards() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  return (
+    <div className='cardsPage'>
+      <Container className="featurette">
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center', }}>Inaugaration
+                                              </h2>
+                        
+            <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col"  data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">In an atmosphere charged with enthusiasm and a thirst for knowledge, the 
+inauguration of the Atharva Data Science Community (ADSC) marked a significant
+milestone for the expanding data science enthusiasts at Malla Reddy Engineering
+College. The event commenced with the solemn lighting of the lamp, symbolizing
+the illumination of minds, followed by a serene prayer song that resonated with the
+spirit of the occasion.
+The respected Principal, Dr. A. Ramaswami Reddy, and the beloved Head of the Data
+Science Department, Dr. S. Shiva Prasad, along with other esteemed faculty
+members who graced the occasion with their presence.
+</p>
+          </Col>
+          <Col md={5}>
+            <img src={inaug} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+        </Row>
+
+        <br />
+<br />
+        
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>Orientation 2K22</h2>
+
+            
+          <Col md={5}>
+            <img src={k22} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+          <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">The orientation of the Atharva Data Science Community (ADSC) held
+at Malla Reddy Engineering College on December 10, 2022, was a
+significant event attended by over 400 students. The event was graced
+by the presence of respected individuals, including Principal Dr. A.
+Ramaswami Reddy, and the beloved Head of the Data Science
+Department, Dr. S. Shiva Prasad, as well as Ms. Hema and other
+esteemed data science faculty members.</p>
+</Col>
+        </Row>
+        <br /><br />
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>Hiring Interns</h2>
+
+            <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">In the ever-evolving field of data
+science, knowledge transfer and
+continuity are paramount. The Atharva
+Data Science Community (ADSC) at
+Malla Reddy Engineering College
+understands this fundamental concept .
+Founded in 2021 by second-year
+students of the Data Science
+department, ADSC has made significant
+strides in fostering data science skills
+and knowledge within the college.
+</p>
+          </Col>
+          <Col md={5}>
+            <img src={event2} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+        </Row>
+        <br />
+<br />
+        
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>Guest Lecture</h2>
+
+            
+          <Col md={5}>
+            <img src={guest} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+          <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">In our increasingly data-driven world, the significance of Big Data
+cannot be overstated. This paper delves into the enlightening event
+where HOD Shiva Prasad and Ms. Hema shared their expertise on
+this subject. Big Data, the vast and complex data sets generated by
+our digital activities, is reshaping industries and academia alike.
+The event took place on [date] at [location], organized by
+[institution]. Both guest speakers, HOD Shiva Prasad and Ms.
+Hema, brought their unique perspectives to the table.</p>
+          </Col>
+        </Row>
+        <br />
+
+        <br />
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>SQL Unleashed</h2>
+
+            <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">On December 26, 2022, the Atharva Data Science Community at Malla Reddy Engineering
+College organised an enlightening and informative webinar on SQL, the Structured Query
+Language, a fundamental topic in the world of data management. This event witnessed a
+remarkable turnout, with approximately 300 enthusiastic students from both the second and third
+years of the college attending the session. The seniors from the Atharva Data Science
+Community took the lead in conducting the webinar, imparting valuable insights and knowledge
+to their fellow students</p>
+          </Col>
+          <Col md={5}>
+            <img src={sql} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+        </Row>
+        <br />
+
+        <br />
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>Explanatory Data Analysis</h2>
+
+            
+          <Col md={5}>
+            <img src={EDA} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+          <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">A workshop on Exploratory Data Analysis (EDA) was conducted by
+ADSC on 28th and 29th November 2022. The session aimed to provide
+students with insights into the importance and practical aspects of EDA
+in the field of data science and analytics.
+The session provided a clear understanding of what EDA is and why it is
+essential in the data analysis process. Students learned how EDA helps
+in uncovering patterns, outliers, and relationships within data.
+Practical examples of data visualization using Python libraries were
+demonstrated. Students got hands-on experience in creating meaningful
+visualizations to better understand data distributions and trends.</p>
+          </Col>
+        </Row>
+        
+        <br />
+<br />
+        
+
+        <Row>
+        <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center'}}>Hackathon</h2>
+
+            
+          
+          <Col md={7} className="d-flex flex-column justify-content-center align-items-center custom-col" data-aos="fade-up-right" data-aos-duration="1500">
+            <p className="lead">On September 16, 2023, Malla Reddy Engineering College hosted an Internal Hackathon as part of the
+Smart India Hackathon (SIH) 2023 initiative. The primary goal of this event was to cultivate innovative
+thinking among the college's students and encourage them to propose creative solutions to a wide range
+of problem statements provided by the SIH platform. These problem statements spanned various themes,
+including agriculture, medicine, education, smart technology, and more, allowing students to explore and
+innovate across diverse areas.
+The event witnessed an enthusiastic participation of over 100 teams, each bringing forth their unique and
+imaginative ideas. This hackathon provided an exceptional platform for students to collaborate,
+brainstorm, and exhibit their problem-solving abilities. </p>
+          </Col>
+          <Col md={5}>
+            <img src={Hack} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Placeholder" data-aos="fade-up-left" data-aos-duration="1500"/>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  )
+}
+
+export default Cards;
