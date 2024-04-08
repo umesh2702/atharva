@@ -23,7 +23,6 @@ function Carousel() {
         <div>
             {/* Carousel */}
         <section className="mt-5">
-          <h2 className="text-center"></h2>
           <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" >
             <div className="carousel-inner" style={{maxHeight:'60vh', maxWidth:'80vw',  marginLeft:'10%'}}>
             <Slider {...settings}>

@@ -16,7 +16,7 @@ function Cards() {
   }, [])
   return (
     <div className='cardsPage'>
-      <Container className="featurette">
+      <Container className="featurette" style={{color:'white'}}>
         <Row>
         <h2 className="fw-normal lh-1" style={{color:'#F25A3C', fontWeight:'600', fontSize:'40px', textAlign:'center', }}>Inaugaration
                                               </h2>

@@ -1,5 +1,4 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
+import React, { useState } from 'react';
 import image1 from '../images/core/1.png';
 import image2 from '../images/core/2.png';
 import image3 from '../images/core/3.png';
@@ -12,6 +11,8 @@ import image9 from '../images/core/9.png';
 import image10 from '../images/core/10.png';
 
 function Core() {
+  const [hoveredMember, setHoveredMember] = useState(null);
+
   // Sample data for founding core batch members
   const foundingMembers = [
     { id: 1, name: 'Akshay M', post: 'President', image: image1 },
@@ -27,18 +28,59 @@ function Core() {
     // Add more members here
   ];
 
+  const handleHover = (id) => {
+    setHoveredMember(id);
+  };
+
   return (
     <div>
       <h2 style={{ textAlign: 'center' }}>Founding Core Batch</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {foundingMembers.map(member => (
-          <Card key={member.id} style={{ width: '18rem', margin: '20px', textAlign: 'center' }}>
-            <Card.Img variant="top" src={member.image} alt={member.name} />
-            <Card.Body>
-              <Card.Title>{member.name}</Card.Title>
-              <Card.Text>{member.post}</Card.Text>
-            </Card.Body>
-          </Card>
+          <div 
+            key={member.id} 
+            style={{ 
+              width: '120px', 
+              height: '120px', 
+              position: 'relative', 
+              margin: '20px', 
+              overflow: 'hidden', 
+              cursor: 'pointer', 
+            }}
+            onMouseEnter={() => handleHover(member.id)}
+            onMouseLeave={() => handleHover(null)}
+          >
+            <img 
+              src={member.image} 
+              alt={member.name} 
+              style={{ 
+                width: '100%', 
+                height: '100%', 
+                objectFit: 'cover', 
+                transform: hoveredMember === member.id ? 'scale(1.2)' : 'scale(1)',
+                transition: 'transform 0.3s'
+              }} 
+            />
+            {hoveredMember === member.id && (
+              <div 
+                style={{
+                  position: 'absolute',
+                  top: '0',
+                  left: '130px', // Adjust this value as needed
+                  width: '400px',
+                  height: '240px',
+                  backgroundColor: '#f9f9f9',
+                  border: '1px solid #ddd',
+                  borderRadius: '10px',
+                  padding: '20px',
+                  zIndex: '999',
+                }}
+              >
+                <h3>{member.name}</h3>
+                <p>{member.post}</p>
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </div>

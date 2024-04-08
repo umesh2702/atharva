@@ -4,6 +4,7 @@ import { FaLinkedin, FaInstagram, FaPhoneAlt,FaDiscord } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import adsc from '../images/atharva2.png';
 import { Link } from "react-router-dom";
+import nas from '../images/nasio.png'
 
 
 const ThreeEqualBoxes = () => {
@@ -61,15 +62,19 @@ const ThreeEqualBoxes = () => {
           <div className="pt-5 h-80 rounded-lg d-flex flex-column justify-content-center align-items-center text-center" style={{padding:'0',}}>
             <h2 className="text-2xl font-semibold"  style={{color:'white'}}>Follow Us</h2>
             <div className="d-flex mt-2" style={{ gap:'10px'}}>
-              <a href="https://www.linkedin.com/company/atharva-data-science-community/" className="mr-2" target="_blank">
+              <a href="https://www.linkedin.com/company/atharva-data-science-community/" className="mr-2" target="_blank" rel="noreferrer">
                 <FaLinkedin style={{ fontSize: "2.25rem", color: "rgb(134, 114, 243)" }} />
               </a>
-              <a href="https://www.instagram.com/atharvadsc" className="mr-2" target="_blank">
+              <a href="https://www.instagram.com/atharvadsc" className="mr-2" target="_blank" rel="noreferrer">
                 <FaInstagram style={{ fontSize: "2.25rem", color: "rgb(134, 114, 243)" }} />
               </a>
-              <a href="https://github.com/ATHARVADSCOMMUNITY" className="mr-2" target="_blank">
+              <a href="https://github.com/ATHARVADSCOMMUNITY" className="mr-2" target="_blank" rel="noreferrer">
                 <FaDiscord style={{ fontSize: "2.25rem", color: "rgb(134, 114, 243)" }} />
               </a>
+              <a href="https://github.com/ATHARVADSCOMMUNITY" className="mr-2" target="_blank" rel="noreferrer">
+              <img src={nas} alt="" style={{maxHeight:'36px', maxWidth:'36px '}} />              
+              </a>
+
             </div>
           </div>
         </Col>

@@ -3,7 +3,7 @@ import atharvalogo from '../images/atharva logo.png'
 
 function Descript() {
   return (
-<section className="mt-5">
+<section className="mt-5" style={{color:'white'}}>
       <div className="container">
         <div className="row">
         <div className="col-md-6" >

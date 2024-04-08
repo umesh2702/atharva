@@ -1,0 +1,96 @@
+/* Landing.css */
+
+/* Styles for the landing page container */
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* Styles for the video background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Styles for the content container */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Styles for the typewriter animation container */
+.typewriter-container {
+  margin-bottom: 2rem;
+}
+
+/* Styles for the typewriter animation */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Styles for the blinking cursor animation */
+.animate-blink {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Decrease font size for the h1 element */
+  .content h1 {
+    font-size: 5vw; /* Use viewport width (5% of viewport width) */
+  }
+
+  /* Decrease font size for the typewriter animation */
+  .typewriter-container {
+    font-size: 3vw; /* Use viewport width (3% of viewport width) */
+  }
+
+  /* Decrease button size */
+  .button-container button {
+    font-size: 2.5vw; /* Use viewport width (2.5% of viewport width) */
+    padding: 2vw; /* Use viewport width (2% of viewport width) */
+  }
+}
+
+/* Additional media query for even smaller screens */
+@media (max-width: 480px) {
+  /* Further decrease font size for the h1 element */
+  .content h1 {
+    font-size: 7vw; /* Use viewport width (7% of viewport width) */
+  }
+
+  /* Further decrease font size for the typewriter animation */
+  .typewriter-container {
+    font-size: 4vw; /* Use viewport width (4% of viewport width) */
+  }
+
+  /* Further decrease button size */
+  .button-container button {
+    font-size: 3vw; /* Use viewport width (3% of viewport width) */
+    padding: 2.5vw; /* Use viewport width (2.5% of viewport width) */
+  }
+}

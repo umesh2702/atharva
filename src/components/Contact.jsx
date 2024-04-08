@@ -25,7 +25,7 @@ const ContactUs = () => {
 
           <div className="row justify-content-center">
             <div className="col-md-8">
-              <form>
+              <form style={{color:'white'}}>
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">
                     Your Name (required)

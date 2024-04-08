@@ -67,7 +67,9 @@ body{
   font-weight: bold;
 }
 
-
+.highlight {
+  background-color: yellow; /* You can change this to any color you prefer */
+}
 .second{
   justify-content: center;
   align-items: center;
@@ -115,3 +117,6 @@ body{
     cursor: pointer;
 }
 
+.menu-item:hover {
+  background-color: #FFA500; /* Orange color on hover */
+}

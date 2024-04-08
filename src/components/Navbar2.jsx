@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import adsc from '../images/atharva2.png';
 
 function Navbar2({ toggleDashboard, handleLogout }) {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -14,19 +15,31 @@ function Navbar2({ toggleDashboard, handleLogout }) {
   const handleToggleOffcanvas = () => setShowOffcanvas(!showOffcanvas);
 
   return (
-    <>
+    <div>
       {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-dark mb-3" fixed='' style={{ height: '10vh', paddingBottom: '0px', paddingTop: '0px', marginBottom: '0px', }}>
+        <Navbar key={expand} expand={expand} className="bg-dark" style={{ height: '10vh', paddingBottom: '0px', paddingTop: '0px', margin: '0px', position: 'fixed', width: '100%', zIndex: '1000' }}>
           <Container fluid style={{ padding: 0, margin: 0 }}>
-            <Button
-              className='navbar-brand fs-4 bg-dark'
-              onClick={toggleDashboard}
-              role="button"
-              tabIndex={0}
-              style={{ color: 'white', marginLeft: '0px', border: 'none' }}
-            >
-              Dashboard
-            </Button>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <Button
+                className='navbar-brand bg-dark'
+                onClick={toggleDashboard}
+                role="button"
+                tabIndex={0}
+                style={{ color: 'white', marginLeft: '0px', border: 'none', marginRight:'10px', fontSize:'20px'}}
+              >
+                Dashboard
+              </Button>
+              <Link to='/'>
+                <Navbar.Brand href="#">
+                  <img
+                    src={adsc}
+                    alt=""
+                    className="img-fluid"
+                    style={{ maxHeight: '50px' }}
+                  />
+                </Navbar.Brand>
+              </Link>
+            </div>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'end' }}>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={{ backgroundColor: '#EF8535' }} onClick={handleToggleOffcanvas} />
               <Navbar.Offcanvas
@@ -66,7 +79,7 @@ function Navbar2({ toggleDashboard, handleLogout }) {
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                     <path
                       fillRule="evenodd"
-                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
                     />
                   </svg>
                 </Dropdown.Toggle>
@@ -81,7 +94,7 @@ function Navbar2({ toggleDashboard, handleLogout }) {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 
